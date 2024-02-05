@@ -50,7 +50,7 @@ function calculateValue() {
   const ethValue = ethAmount * ethPrice;
   
   // Exibindo os resultados
-  resultElement.innerHTML = `Bitcoin's value: ${btcValue.toFixed(2)} USD<br>Value of Ethereum: ${ethValue.toFixed(2)} USD`;
+  resultElement.innerHTML = `Value of Bitcoin: ${btcValue.toFixed(2)} USD<br>Value of Ethereum: ${ethValue.toFixed(2)} USD`;
 }
 
 
