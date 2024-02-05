@@ -20,7 +20,7 @@ async function fetchPrices() {
           EUR: €${data.ethereum.eur.toFixed(2)}
       `;
   } catch (error) {
-      console.error("Erro ao obter os preços:", error);
+      console.error("Error when obtaining prices:", error);
   }
 }
 
@@ -41,7 +41,7 @@ function calculateValue() {
   
   // Verifica se os valores de entrada são números válidos
   if (isNaN(btcAmount) || isNaN(ethAmount)) {
-      resultElement.innerHTML = 'Por favor, insira um número válido para a quantidade de Bitcoin e Ethereum.';
+      resultElement.innerHTML = 'Please enter a valid number for the amount of Bitcoin and Ethereum.';
       return;
   }
   
@@ -50,7 +50,7 @@ function calculateValue() {
   const ethValue = ethAmount * ethPrice;
   
   // Exibindo os resultados
-  resultElement.innerHTML = `Valor do Bitcoin: ${btcValue.toFixed(2)} USD<br>Valor do Ethereum: ${ethValue.toFixed(2)} USD`;
+  resultElement.innerHTML = `Bitcoin's value: ${btcValue.toFixed(2)} USD<br>Value of Ethereum: ${ethValue.toFixed(2)} USD`;
 }
 
 
@@ -70,7 +70,7 @@ async function fetchBTCData() {
       });
       return { labels, prices };
   } catch (error) {
-      console.error("Erro ao obter dados históricos do Bitcoin:", error);
+      console.error("Error retrieving Bitcoin historical data:", error);
       return { labels: [], prices: [] }; // Retornar arrays vazios em caso de erro
   }
 }
@@ -87,7 +87,7 @@ async function fetchETHData() {
       });
       return { labels, prices };
   } catch (error) {
-      console.error("Erro ao obter dados históricos do Ethereum:", error);
+      console.error("Error retrieving Ethereum historical data:", error);
       return { labels: [], prices: [] }; // Retornar arrays vazios em caso de erro
   }
 }
