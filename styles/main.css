@@ -156,6 +156,10 @@ dd {
     margin: 0 0 .5rem 2rem;
     font-size: smaller;
 }
+#calculator {
+    margin-bottom: 45px; /* Adicione um espaço no final da seção da calculadora para evitar que o rodapé sobreponha */
+}
+
 
 footer {
     background-color: #444;
@@ -278,6 +282,7 @@ footer {
     box-shadow: 0 0 30px #777;
     margin: .5rem;
 }
+
 
 /* Media Queries */
 @media only screen and (min-width: 32.5em) {

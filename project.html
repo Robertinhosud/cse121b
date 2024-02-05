@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | CSE 121b | W02: Programming Tasks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html">W5 Task</a></li>
+      <li><a href="project.html">Project</a></li>
+    </ul>
+  </nav>
+    <header>
+        <h1>Calculadora de Criptomoedas</h1>
+    </header>
+    <main>
+        <section id="prices">
+            <h2>Preços atuais</h2>
+            <div id="bitcoin-price">
+                <h3>Bitcoin (BTC)</h3>
+                <p>Preço: <span id="btc-price">Carregando...</span></p>
+            </div>
+            <div id="ethereum-price">
+                <h3>Ethereum (ETH)</h3>
+                <p>Preço: <span id="eth-price">Carregando...</span></p>
+            </div>
+
+        </section>
+          <h2>Preços dos últimos 30 dias </h2>
+       
+      <section id="btc-chart-container">
+            <h2>Gráfico do Bitcoin (BTC)</h2>
+            <canvas id="btc-chart"></canvas>
+      </section>
+      <section id="eth-chart-container">
+            <h2>Gráfico do Ethereum (ETH)</h2>
+            <canvas id="eth-chart"></canvas>
+      </section>
+    
+    
+        <section id="calculator">
+            <h2>Calculadora</h2>
+            <label for="btc-amount">Quantidade de Bitcoin:</label>
+            <input type="number" id="btc-amount" min="0">
+            <label for="eth-amount">Quantidade de Ethereum:</label>
+            <input type="number" id="eth-amount" min="0">
+            <button id="calculate-btn">Calcular</button>
+            <div id="result"></div>
+        </section>
+    </main>
+   
+<footer>
+    &copy;<span id="year"></span> | Calculadora de Criptomoedas | CSE 121b
+  </footer>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/project.js"></script>
+</body>
+
+</html>
